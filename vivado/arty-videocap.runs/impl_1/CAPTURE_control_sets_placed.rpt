@@ -1,0 +1,172 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Feb 15 01:22:39 2019
+| Host         : DESKTOP-AOQ4M3I running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file CAPTURE_control_sets_placed.rpt
+| Design       : CAPTURE
+| Device       : xc7a35ti
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    97 |
+| Unused register locations in slices containing registers |   234 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            5 |
+|      2 |            2 |
+|      4 |            3 |
+|      5 |           18 |
+|      6 |            7 |
+|      7 |            3 |
+|      8 |           25 |
+|      9 |            4 |
+|     11 |            4 |
+|     12 |            4 |
+|     15 |            1 |
+|    16+ |           21 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1843 |          602 |
+| No           | No                    | Yes                    |              61 |           23 |
+| No           | Yes                   | No                     |             614 |          178 |
+| Yes          | No                    | No                     |             168 |           50 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             208 |           52 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+-------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|          Clock Signal          |                     Enable Signal                     |                    Set/Reset Signal                    | Slice Load Count | Bel Load Count |
++--------------------------------+-------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|  pt/clk1x_des                  |                                                       | pt/genblk1[0].rx/PhaseAlignX/pIDLY_LD_i_1_n_0          |                1 |              1 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/x_from_valid_reg[0]                                 |                1 |              1 |
+|  pt/clocking/inst/clk_out1     |                                                       | pt/led[4]_i_1_n_0                                      |                1 |              1 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/x_from_valid_reg[1]                                 |                1 |              1 |
+|  pt/clk1x_des                  |                                                       | pt/led[5]_i_1_n_0                                      |                1 |              1 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | rled[1]_i_1_n_0                                        |                2 |              2 |
+|  et/C_BUFG                     |                                                       |                                                        |                2 |              2 |
+|  pt/clocking_des/inst/clk_out1 | me/height_cand0                                       | me/height_cnt                                          |                1 |              4 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/yenc/bitlen_reg[3]_rep_n_0_[3]                      |                2 |              4 |
+|  pt/clocking_des/inst/clk_out1 | me/width_cand0                                        | me/width_cnt                                           |                1 |              4 |
+|  pt/clk1x_des                  | pt/genblk1[0].rx/PhaseAlignX/pCenterTap[5]_i_1_n_0    |                                                        |                2 |              5 |
+|  pt/clk1x_des                  | pt/genblk1[0].rx/PhaseAlignX/pEyeOpenEn               | pt/genblk1[0].rx/PhaseAlignX/pEyeOpenRst               |                1 |              5 |
+|  pt/clk1x_des                  | pt/genblk1[2].rx/PhaseAlignX/pCenterTap[5]_i_1__1_n_0 |                                                        |                1 |              5 |
+|  pt/clk1x_des                  | pt/genblk1[2].rx/PhaseAlignX/pEyeOpenEn               | pt/genblk1[2].rx/PhaseAlignX/pEyeOpenRst               |                1 |              5 |
+| ~eth_tx_clk_IBUF_BUFG          |                                                       |                                                        |                3 |              5 |
+|  pt/clocking_des/inst/clk_out1 | me/bs/ovalid                                          | pt/sas_g/out                                           |                1 |              5 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/cenc[0]/eob                                         |                2 |              5 |
+|  pt/clocking_des/inst/clk_out1 | me/is/p_4_out                                         | pt/sas_g/out                                           |                2 |              5 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/cenc[0]/runlen[0][4]_i_1__1_n_0                     |                1 |              5 |
+|  pt/clocking_des/inst/clk_out1 | me/is/p_6_out                                         | pt/sas_g/out                                           |                1 |              5 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/cenc[1]/eob                                         |                2 |              5 |
+|  pt/clocking_des/inst/clk_out1 | me/is/p_7_out                                         | pt/sas_g/out                                           |                1 |              5 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/cenc[1]/runlen[0][4]_i_1__0_n_0                     |                1 |              5 |
+|  pt/clocking_des/inst/clk_out1 | me/is/genblk1[3].raddr[4]_i_1_n_0                     | pt/sas_g/out                                           |                1 |              5 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/yenc/eob                                            |                4 |              5 |
+|  pt/clk1x_des                  | pt/genblk1[1].rx/PhaseAlignX/pEyeOpenEn               | pt/genblk1[1].rx/PhaseAlignX/pEyeOpenRst               |                1 |              5 |
+|  pt/clk1x_des                  | pt/genblk1[1].rx/PhaseAlignX/pCenterTap[5]_i_1__0_n_0 |                                                        |                2 |              5 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/yenc/runlen[0][4]_i_1_n_0                           |                1 |              5 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/cenc[0]/bitlen_reg[3]_rep_n_0_[3]                   |                2 |              6 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/cenc[0]/elen[5]_i_1__1_n_0                          |                1 |              6 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/ereq_cnt[5]_i_1_n_0                                 |                2 |              6 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/cenc[1]/elen[5]_i_1__0_n_0                          |                2 |              6 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/yenc/elen[5]_i_1_n_0                                |                1 |              6 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/cenc[1]/bitlen_reg[3]_rep_n_0_[3]                   |                3 |              6 |
+|  pt/clk1x_des                  |                                                       | pt/led20                                               |                4 |              6 |
+|  pt/clk1x_des                  |                                                       | pt/genblk1[2].rx/PhaseAlignX/pCtlTknRst                |                2 |              7 |
+|  pt/clk1x_des                  |                                                       | pt/genblk1[1].rx/PhaseAlignX/pCtlTknRst                |                1 |              7 |
+|  pt/clk1x_des                  |                                                       | pt/genblk1[0].rx/PhaseAlignX/pCtlTknRst                |                2 |              7 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/cenc[0]/bitlen[3]_rep[3]_i_1__1_n_0                 |                2 |              8 |
+|  pt/clocking/inst/clk_out1     |                                                       | pt/sas_idly/clear_20                                   |                2 |              8 |
+|  pt/clocking/inst/clk_out1     |                                                       | pt/sas_ref/delaycnt[7]_i_2__0_n_0                      |                2 |              8 |
+|  pt/clocking_des/inst/clk_out1 | val[2]/E[0]                                           |                                                        |                4 |              8 |
+|  pt/clocking_des/inst/clk_out1 | val[0]/E[0]                                           |                                                        |                5 |              8 |
+|  pt/clocking_des/inst/clk_out1 | me/footer_header_reg_0_15_0_0_i_1_n_0                 |                                                        |                2 |              8 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | pt/genblk1[2].rx/SyncBaseRst/SyncAsyncx/AS[0]          |                3 |              8 |
+|  pt/clocking_des/inst/clk_out1 | me/cenc[0]/last_dc0                                   | me/rvsync_0                                            |                2 |              8 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | cnv_color/Cb[11]                                       |                3 |              8 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/bs/shiftdata[2][56]_i_1_n_0                         |                3 |              8 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/bs/shiftlen_reg_n_0_[1][3]                          |                3 |              8 |
+|  pt/clk1x_ser                  |                                                       | pt/sas_ser/delaycnt[7]_i_2__3_n_0                      |                2 |              8 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/yenc/bitlen[3]_rep[3]_i_1_n_0                       |                2 |              8 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/yenc/clear                                          |                2 |              8 |
+|  pt/clocking_des/inst/clk_out1 | me/cenc[1]/last_dc0                                   | me/rvsync_0                                            |                1 |              8 |
+|  pt/clocking_des/inst/clk_out1 | me/idx_fh[7]_i_1_n_0                                  | pt/sas_g/out                                           |                3 |              8 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | cnv_color/Cr[11]                                       |                1 |              8 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/cenc[0]/clear                                       |                4 |              8 |
+|  pt/clocking_des/inst/clk_out1 | me/footer_header_reg_0_31_0_0_i_1_n_0                 |                                                        |                2 |              8 |
+|  eth_tx_clk_IBUF_BUFG          | et/i_add_crc32/Q[0]                                   | be2e/with_usr_valid                                    |                3 |              8 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/cenc[1]/bitlen[3]_rep[3]_i_1__0_n_0                 |                2 |              8 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/is/stuff_reg_0                                      |                5 |              8 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/pre_edata[3][7]_i_1_n_0                             |                2 |              8 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/cenc[1]/clear                                       |                4 |              8 |
+|  pt/clocking_des/inst/clk_out1 | me/yenc/last_dc0                                      | me/rvsync_0                                            |                1 |              8 |
+|  pt/clocking/inst/clk_out1     |                                                       | pt/genblk1[2].rx/SyncBaseRst/SyncAsyncx/AS[0]          |                5 |              9 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | cnv_color/rY[8]_i_1_n_0                                |                3 |              9 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/bs/shiftlen_reg[2]__0[5]                            |                5 |              9 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/bs/shiftdata[3][32]_i_1_n_0                         |                3 |              9 |
+|  pt/clk1x_des                  | pt/genblk1[1].rx/PhaseAlignX/pState[10]_i_1__0_n_0    | pt/genblk1[1].rx/pAlignRst_reg_n_0                     |                3 |             11 |
+|  pt/clocking_des/inst/clk_out1 | me/width                                              |                                                        |                3 |             11 |
+|  pt/clk1x_des                  | pt/genblk1[0].rx/PhaseAlignX/pState[10]_i_1_n_0       | pt/genblk1[0].rx/pAlignRst_reg_n_0                     |                3 |             11 |
+|  pt/clk1x_des                  | pt/genblk1[2].rx/PhaseAlignX/pState[10]_i_1__1_n_0    | pt/genblk1[2].rx/pAlignRst_reg_n_0                     |                3 |             11 |
+|  pt/clocking_des/inst/clk_out1 | me/width_cand0                                        |                                                        |                3 |             12 |
+|  pt/clocking_des/inst/clk_out1 | me/height_cand0                                       |                                                        |                3 |             12 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | pt/sas_g/rvsync_reg                                    |                3 |             12 |
+|  pt/clocking_des/inst/clk_out1 | me/height                                             |                                                        |                5 |             12 |
+|  eth_tx_clk_IBUF_BUFG          | et/data/counter[15]_i_2_n_0                           | et/data/counter[15]_i_1_n_0                            |                4 |             15 |
+|  pt/clocking_des/inst/clk_out1 | me/footer_header_reg_0_127_0_0_i_2_n_0                |                                                        |                4 |             16 |
+|  pt/clk1x_des                  |                                                       | pt/genblk1[2].rx/SyncBaseRst/SyncAsyncx/AS[0]          |                9 |             20 |
+|  pt/clocking/inst/clk_out1     |                                                       |                                                        |                7 |             22 |
+|  pt/clocking/inst/clk_out1     | pt/genblk1[0].rx/rTimeoutCnt[0]_i_1_n_0               | pt/genblk1[0].rx/SyncBaseRst/SyncAsyncx/oSyncStages[1] |                6 |             24 |
+|  pt/clocking/inst/clk_out1     | pt/genblk1[1].rx/rTimeoutCnt[0]_i_1__0_n_0            | pt/genblk1[1].rx/SyncBaseRst/SyncAsyncx/oSyncStages[1] |                6 |             24 |
+|  pt/clocking/inst/clk_out1     | pt/genblk1[2].rx/rTimeoutCnt[0]_i_1__1_n_0            | pt/genblk1[2].rx/SyncBaseRst/SyncAsyncx/oSyncStages[1] |                6 |             24 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/cenc[1]/elen_reg[1]_0                               |                4 |             24 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | pt/sas_g/clear                                         |                6 |             24 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/cenc[0]/elen_reg[1]_0                               |                5 |             24 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/yenc/elen_reg[1]_0                                  |                4 |             24 |
+|  et/C_BUFG                     | et/sel                                                |                                                        |                7 |             25 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/clear_2                                             |                6 |             27 |
+|  eth_tx_clk_IBUF_BUFG          | be2e/with_usr_valid_reg_0                             |                                                        |                7 |             29 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | me/bs/SR[0]                                            |                8 |             32 |
+|  pt/clocking_des/inst/clk_out1 | pt/sas_g/E[0]                                         |                                                        |                8 |             36 |
+|  pt/clocking_des/inst/clk_out1 | me/bs/I207                                            |                                                        |                8 |             64 |
+|  pt/clk1x_ser                  |                                                       |                                                        |               21 |             68 |
+|  eth_tx_clk_IBUF_BUFG          |                                                       |                                                        |               33 |            111 |
+|  pt/clk1x_des                  |                                                       |                                                        |               55 |            190 |
+|  pt/clocking_des/inst/clk_out1 |                                                       | pt/sas_g/out                                           |               58 |            220 |
+|  pt/clocking_des/inst/clk_out1 |                                                       |                                                        |              481 |           1492 |
++--------------------------------+-------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+
+

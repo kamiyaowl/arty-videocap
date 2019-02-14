@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Tue Feb 12 01:40:08 2019
+// Date        : Thu Feb 14 23:53:05 2019
 // Host        : DESKTOP-AOQ4M3I running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_2/clk_wiz_2_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top clk_wiz_2 -prefix
+//               clk_wiz_2_ clk_wiz_2_sim_netlist.v
 // Design      : clk_wiz_2
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -39,7 +39,6 @@ module clk_wiz_2
         .reset(reset));
 endmodule
 
-(* ORIG_REF_NAME = "clk_wiz_2_clk_wiz" *) 
 module clk_wiz_2_clk_wiz_2_clk_wiz
    (clk_out1,
     clk_out2,
@@ -57,7 +56,6 @@ module clk_wiz_2_clk_wiz_2_clk_wiz
   wire clk_out1;
   wire clk_out1_clk_wiz_2;
   wire clk_out2;
-  wire clk_out2_clk_wiz_2;
   wire clkfbout_buf_clk_wiz_2;
   wire clkfbout_clk_wiz_2;
   wire locked;
@@ -95,10 +93,6 @@ module clk_wiz_2_clk_wiz_2_clk_wiz
   BUFG clkout1_buf
        (.I(clk_out1_clk_wiz_2),
         .O(clk_out1));
-  (* BOX_TYPE = "PRIMITIVE" *) 
-  BUFG clkout2_buf
-       (.I(clk_out2_clk_wiz_2),
-        .O(clk_out2));
   (* BOX_TYPE = "PRIMITIVE" *) 
   MMCME2_ADV #(
     .BANDWIDTH("OPTIMIZED"),
@@ -160,7 +154,7 @@ module clk_wiz_2_clk_wiz_2_clk_wiz
         .CLKINSTOPPED(NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED),
         .CLKOUT0(clk_out1_clk_wiz_2),
         .CLKOUT0B(NLW_mmcm_adv_inst_CLKOUT0B_UNCONNECTED),
-        .CLKOUT1(clk_out2_clk_wiz_2),
+        .CLKOUT1(clk_out2),
         .CLKOUT1B(NLW_mmcm_adv_inst_CLKOUT1B_UNCONNECTED),
         .CLKOUT2(NLW_mmcm_adv_inst_CLKOUT2_UNCONNECTED),
         .CLKOUT2B(NLW_mmcm_adv_inst_CLKOUT2B_UNCONNECTED),

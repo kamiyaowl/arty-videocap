@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Tue Feb 12 01:40:08 2019
+-- Date        : Thu Feb 14 23:53:05 2019
 -- Host        : DESKTOP-AOQ4M3I running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_2/clk_wiz_2_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top clk_wiz_2 -prefix
+--               clk_wiz_2_ clk_wiz_2_stub.vhdl
 -- Design      : clk_wiz_2
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a35ticsg324-1L

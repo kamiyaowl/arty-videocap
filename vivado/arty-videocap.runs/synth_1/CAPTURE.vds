@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Tue Feb 12 01:49:38 2019
-# Process ID: 21820
+# Start of session at: Fri Feb 15 01:06:06 2019
+# Process ID: 27236
 # Current directory: C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1
 # Command line: vivado.exe -log CAPTURE.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CAPTURE.tcl
 # Log file: C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/CAPTURE.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10852 
+INFO: Helper process launched with PID 19824 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 408.352 ; gain = 102.070
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 408.117 ; gain = 102.156
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'CAPTURE' [C:/Users/user/repos/arty-videocap/hdl/CAPTURE.v:4]
 	Parameter RX_INV bound to: 4'b0110 
@@ -151,18 +151,18 @@ WARNING: [Synth 8-350] instance 'rx' of module 'TMDS_Receiver' requires 12 conne
 WARNING: [Synth 8-350] instance 'rx' of module 'TMDS_Receiver' requires 12 connections, but only 10 given [C:/Users/user/repos/arty-videocap/hdl/PASS_THROUGH.v:95]
 WARNING: [Synth 8-350] instance 'rx' of module 'TMDS_Receiver' requires 12 connections, but only 10 given [C:/Users/user/repos/arty-videocap/hdl/PASS_THROUGH.v:95]
 INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/user/repos/arty-videocap/hdl/PASS_THROUGH.v:221]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/.Xil/Vivado-21820-DESKTOP-AOQ4M3I/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (7#1) [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/.Xil/Vivado-21820-DESKTOP-AOQ4M3I/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/.Xil/Vivado-21820-DESKTOP-AOQ4M3I/realtime/clk_wiz_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (8#1) [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/.Xil/Vivado-21820-DESKTOP-AOQ4M3I/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/.Xil/Vivado-27236-DESKTOP-AOQ4M3I/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (7#1) [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/.Xil/Vivado-27236-DESKTOP-AOQ4M3I/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/.Xil/Vivado-27236-DESKTOP-AOQ4M3I/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (8#1) [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/.Xil/Vivado-27236-DESKTOP-AOQ4M3I/realtime/clk_wiz_1_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'BUFIO' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:838]
 INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (9#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:838]
 INFO: [Synth 8-6157] synthesizing module 'BUFR' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:891]
 	Parameter BUFR_DIVIDE bound to: 5 - type: string 
 	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'BUFR' (10#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:891]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_2' [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/.Xil/Vivado-21820-DESKTOP-AOQ4M3I/realtime/clk_wiz_2_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_2' (11#1) [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/.Xil/Vivado-21820-DESKTOP-AOQ4M3I/realtime/clk_wiz_2_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_2' [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/.Xil/Vivado-27236-DESKTOP-AOQ4M3I/realtime/clk_wiz_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_2' (11#1) [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/.Xil/Vivado-27236-DESKTOP-AOQ4M3I/realtime/clk_wiz_2_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'SASRESET' [C:/Users/user/repos/arty-videocap/hdl/SASRESET.v:4]
 INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/user/repos/arty-videocap/hdl/SASRESET.v:9]
 INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/user/repos/arty-videocap/hdl/SASRESET.v:13]
@@ -776,7 +776,7 @@ WARNING: [Synth 8-3331] design PASS_THROUGH has unconnected port sw[2]
 WARNING: [Synth 8-3331] design PASS_THROUGH has unconnected port sw[1]
 WARNING: [Synth 8-3331] design PASS_THROUGH has unconnected port sw[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 525.594 ; gain = 219.313
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 525.211 ; gain = 219.250
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -789,10 +789,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 525.594 ; gain = 219.313
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 525.211 ; gain = 219.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 525.594 ; gain = 219.313
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 525.211 ; gain = 219.250
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -801,31 +801,16 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
+Parsing XDC File [c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_2/clk_wiz_2/clk_wiz_2_in_context.xdc] for cell 'pt/clocking_ser'
+Finished Parsing XDC File [c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_2/clk_wiz_2/clk_wiz_2_in_context.xdc] for cell 'pt/clocking_ser'
 Parsing XDC File [c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'pt/clocking'
 Finished Parsing XDC File [c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'pt/clocking'
 Parsing XDC File [c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'pt/clocking_des'
 Finished Parsing XDC File [c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'pt/clocking_des'
-Parsing XDC File [c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_2/clk_wiz_2/clk_wiz_2_in_context.xdc] for cell 'pt/clocking_ser'
-Finished Parsing XDC File [c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_2/clk_wiz_2/clk_wiz_2_in_context.xdc] for cell 'pt/clocking_ser'
 Parsing XDC File [C:/Users/user/repos/arty-videocap/hdl/constrs.xdc]
-WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/user/repos/arty-videocap/hdl/constrs.xdc:1]
 Finished Parsing XDC File [C:/Users/user/repos/arty-videocap/hdl/constrs.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/user/repos/arty-videocap/hdl/constrs.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/CAPTURE_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 Parsing XDC File [C:/Users/user/repos/arty-videocap/hdl/constrs_port.xdc]
-WARNING: [Vivado 12-584] No ports matched 'scl_tx'. [C:/Users/user/repos/arty-videocap/hdl/constrs_port.xdc:14]
-WARNING: [Vivado 12-584] No ports matched 'sda_tx'. [C:/Users/user/repos/arty-videocap/hdl/constrs_port.xdc:15]
-WARNING: [Vivado 12-584] No ports matched 'hpd_tx'. [C:/Users/user/repos/arty-videocap/hdl/constrs_port.xdc:16]
-WARNING: [Vivado 12-584] No ports matched 'scl_rx'. [C:/Users/user/repos/arty-videocap/hdl/constrs_port.xdc:17]
-WARNING: [Vivado 12-584] No ports matched 'sda_rx'. [C:/Users/user/repos/arty-videocap/hdl/constrs_port.xdc:18]
-WARNING: [Vivado 12-584] No ports matched 'hpd_rx'. [C:/Users/user/repos/arty-videocap/hdl/constrs_port.xdc:19]
-WARNING: [Vivado 12-584] No ports matched 'hpd_rx'. [C:/Users/user/repos/arty-videocap/hdl/constrs_port.xdc:48]
-WARNING: [Vivado 12-584] No ports matched 'sda_rx'. [C:/Users/user/repos/arty-videocap/hdl/constrs_port.xdc:49]
-WARNING: [Vivado 12-584] No ports matched 'scl_rx'. [C:/Users/user/repos/arty-videocap/hdl/constrs_port.xdc:50]
-WARNING: [Vivado 12-584] No ports matched 'hpd_tx'. [C:/Users/user/repos/arty-videocap/hdl/constrs_port.xdc:51]
-WARNING: [Vivado 12-584] No ports matched 'sda_tx'. [C:/Users/user/repos/arty-videocap/hdl/constrs_port.xdc:52]
-WARNING: [Vivado 12-584] No ports matched 'scl_tx'. [C:/Users/user/repos/arty-videocap/hdl/constrs_port.xdc:53]
 Finished Parsing XDC File [C:/Users/user/repos/arty-videocap/hdl/constrs_port.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/user/repos/arty-videocap/hdl/constrs_port.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/CAPTURE_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/user/repos/arty-videocap/hdl/constrs_port.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CAPTURE_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/CAPTURE_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [C:/Users/user/repos/arty-videocap/hdl/constrs_prop.xdc]
@@ -835,57 +820,35 @@ Finished Parsing XDC File [C:/Users/user/repos/arty-videocap/hdl/ArtyEtherentTX/
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/user/repos/arty-videocap/hdl/ArtyEtherentTX/constraints/arty.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CAPTURE_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/CAPTURE_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [C:/Users/user/repos/arty-videocap/hdl/ArtyEtherentTX/constraints/arty_ooc.xdc]
-WARNING: [Vivado 12-584] No ports matched 'CLK100MHZ'. [C:/Users/user/repos/arty-videocap/hdl/ArtyEtherentTX/constraints/arty_ooc.xdc:2]
-WARNING: [Vivado 12-584] No ports matched 'CLK100MHZ'. [C:/Users/user/repos/arty-videocap/hdl/ArtyEtherentTX/constraints/arty_ooc.xdc:3]
 Finished Parsing XDC File [C:/Users/user/repos/arty-videocap/hdl/ArtyEtherentTX/constraints/arty_ooc.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/user/repos/arty-videocap/hdl/ArtyEtherentTX/constraints/arty_ooc.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/CAPTURE_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 Parsing XDC File [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/dvi2rgb.xdc]
-WARNING: [Vivado 12-180] No cells matched 'DataDecoders[*].DecoderX/InputSERDES_X/InputDelay'. [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/dvi2rgb.xdc:8]
-WARNING: [Vivado 12-180] No cells matched 'TMDS_ClockingX/IDelayCtrlX'. [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/dvi2rgb.xdc:9]
 Finished Parsing XDC File [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/dvi2rgb.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/dvi2rgb.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/CAPTURE_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 Parsing XDC File [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/dvi2rgb_ooc.xdc]
-WARNING: [Vivado 12-584] No ports matched 'TMDS_Clk_p'. [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/dvi2rgb_ooc.xdc:1]
-WARNING: [Vivado 12-584] No ports matched 'RefClk'. [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/dvi2rgb_ooc.xdc:2]
 Finished Parsing XDC File [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/dvi2rgb_ooc.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/dvi2rgb_ooc.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/CAPTURE_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 Parsing XDC File [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/ila_timing_workaround.xdc]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg*" && IS_SEQUENTIAL }'. [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/ila_timing_workaround.xdc:1]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~ "*ila_core_inst/use_probe_debug_circuit_2_reg*" && IS_SEQUENTIAL}'. [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/ila_timing_workaround.xdc:1]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg*" && IS_SEQUENTIAL }'. [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/ila_timing_workaround.xdc:2]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~ "*ila_core_inst/en_adv_trigger_2_reg*" && IS_SEQUENTIAL}'. [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/ila_timing_workaround.xdc:2]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_regs/reg_1a/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg*" && IS_SEQUENTIAL }'. [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/ila_timing_workaround.xdc:3]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~ "*ila_core_inst/en_adv_trigger_2_reg*" && IS_SEQUENTIAL}'. [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/ila_timing_workaround.xdc:3]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.arm_in_transfer_inst/dout_reg*" && IS_SEQUENTIAL }'. [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/ila_timing_workaround.xdc:4]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.arm_in_transfer_inst/temp_reg0_reg*" && IS_SEQUENTIAL }'. [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/ila_timing_workaround.xdc:4]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.halt_in_transfer_inst/dout_reg*" && IS_SEQUENTIAL }'. [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/ila_timing_workaround.xdc:5]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.halt_in_transfer_inst/temp_reg0_reg*" && IS_SEQUENTIAL }'. [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/ila_timing_workaround.xdc:5]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.halt_out_transfer_inst/dout_reg*" && IS_SEQUENTIAL }'. [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/ila_timing_workaround.xdc:6]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.halt_out_transfer_inst/temp_reg0_reg*" && IS_SEQUENTIAL }'. [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/ila_timing_workaround.xdc:6]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.arm_out_transfer_inst/dout_reg*" && IS_SEQUENTIAL }'. [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/ila_timing_workaround.xdc:7]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.arm_out_transfer_inst/temp_reg0_reg*" && IS_SEQUENTIAL }'. [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/ila_timing_workaround.xdc:7]
 Finished Parsing XDC File [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/ila_timing_workaround.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/ila_timing_workaround.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/CAPTURE_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/dont_touch.xdc]
 INFO: [Timing 38-2] Deriving generated clocks
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 854.715 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 854.270 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 854.715 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 854.270 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   PLLE2_BASE => PLLE2_ADV: 1 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 854.715 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 854.715 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 854.270 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 854.270 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 854.715 ; gain = 548.434
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 854.270 ; gain = 548.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35ticsg324-1L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 854.715 ; gain = 548.434
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 854.270 ; gain = 548.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -894,11 +857,11 @@ Applied set_property IO_BUFFER_TYPE = NONE for tmds_rx_n[3]. (constraint file  c
 Applied set_property CLOCK_BUFFER_TYPE = NONE for tmds_rx_n[3]. (constraint file  c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc, line 5).
 Applied set_property IO_BUFFER_TYPE = NONE for tmds_rx_p[3]. (constraint file  c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc, line 6).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for tmds_rx_p[3]. (constraint file  c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc, line 7).
+Applied set_property DONT_TOUCH = true for pt/clocking_ser. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for pt/clocking. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for pt/clocking_des. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for pt/clocking_ser. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 854.715 ; gain = 548.434
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 854.270 ; gain = 548.309
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'pState_reg' in module 'PhaseAlign'
 INFO: [Synth 8-5546] ROM "pCtlTknOvf" won't be mapped to RAM because it is too sparse
@@ -994,7 +957,7 @@ INFO: [Synth 8-5546] ROM "busy0" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'pState_reg' in module 'PhaseAlign'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 854.715 ; gain = 548.434
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 854.270 ; gain = 548.309
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2183,7 +2146,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (me/\pre_e
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (me/bs/\shiftdata_reg[1][27] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (me/bs/\shiftdata_reg[2][30] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 854.715 ; gain = 548.434
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 854.270 ; gain = 548.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2221,7 +2184,9 @@ ROM:
 |DCT_COSTABLE      | tbl                  | 64x8          | LUT            | 
 |BITSTREAM         | p_0_out              | 32x32         | LUT            | 
 |BITSTREAM         | p_0_out              | 32x32         | LUT            | 
+|COMPONENT_ENCODER | gen_dsp[1].cost/tbl  | 64x8          | LUT            | 
 |COMPONENT_ENCODER | gen_dsp[2].cost/tbl  | 64x8          | LUT            | 
+|COMPONENT_ENCODER | gen_dsp[3].cost/tbl  | 64x8          | LUT            | 
 |COMPONENT_ENCODER | gen_dsp[4].cost/tbl  | 64x8          | LUT            | 
 |COMPONENT_ENCODER | gen_dsp[5].cost/tbl  | 64x8          | LUT            | 
 |COMPONENT_ENCODER | gen_dsp[6].cost/tbl  | 64x8          | LUT            | 
@@ -2233,7 +2198,13 @@ ROM:
 |COMPONENT_ENCODER | gen_dsp[13].cost/tbl | 64x8          | LUT            | 
 |COMPONENT_ENCODER | gen_dsp[15].cost/tbl | 64x8          | LUT            | 
 |COMPONENT_ENCODER | gen_dsp[16].cost/tbl | 64x8          | LUT            | 
+|COMPONENT_ENCODER | gen_dsp[17].cost/tbl | 64x8          | LUT            | 
+|COMPONENT_ENCODER | gen_dsp[18].cost/tbl | 64x8          | LUT            | 
+|COMPONENT_ENCODER | gen_dsp[19].cost/tbl | 64x8          | LUT            | 
 |COMPONENT_ENCODER | gen_dsp[20].cost/tbl | 64x8          | LUT            | 
+|COMPONENT_ENCODER | gen_dsp[21].cost/tbl | 64x8          | LUT            | 
+|COMPONENT_ENCODER | gen_dsp[22].cost/tbl | 64x8          | LUT            | 
+|COMPONENT_ENCODER | gen_dsp[23].cost/tbl | 64x8          | LUT            | 
 |COMPONENT_ENCODER | gen_dsp[24].cost/tbl | 64x8          | LUT            | 
 |COMPONENT_ENCODER | gen_dsp[25].cost/tbl | 64x8          | LUT            | 
 |COMPONENT_ENCODER | gen_dsp[26].cost/tbl | 64x8          | LUT            | 
@@ -2243,9 +2214,9 @@ ROM:
 |COMPONENT_ENCODER | gen_dsp[3].cost/tbl  | 64x8          | LUT            | 
 |COMPONENT_ENCODER | gen_dsp[4].cost/tbl  | 64x8          | LUT            | 
 |COMPONENT_ENCODER | gen_dsp[5].cost/tbl  | 64x8          | LUT            | 
+|COMPONENT_ENCODER | gen_dsp[1].cost/tbl  | 64x8          | LUT            | 
 |COMPONENT_ENCODER | gen_dsp[2].cost/tbl  | 64x8          | LUT            | 
 |COMPONENT_ENCODER | gen_dsp[3].cost/tbl  | 64x8          | LUT            | 
-|COMPONENT_ENCODER | gen_dsp[4].cost/tbl  | 64x8          | LUT            | 
 |COMPONENT_ENCODER | gen_dsp[5].cost/tbl  | 64x8          | LUT            | 
 +------------------+----------------------+---------------+----------------+
 
@@ -2458,25 +2429,25 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5578] Moved timing constraint from pin 'pt/clocking/clk_in1' to pin 'bufg_des/O'
-INFO: [Synth 8-5578] Moved timing constraint from pin 'pt/clocking/clk_out1' to pin 'pt/clocking/bbstub_clk_out1/O'
-INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'pt/clocking/clk_in1' to 'et/i_bufg/I'
-INFO: [Synth 8-5578] Moved timing constraint from pin 'pt/clocking_des/clk_out1' to pin 'pt/clocking_des/bbstub_clk_out1/O'
-INFO: [Synth 8-5578] Moved timing constraint from pin 'pt/clocking_des/clk_out2' to pin 'pt/clocking_des/bbstub_clk_out2/O'
 INFO: [Synth 8-5578] Moved timing constraint from pin 'pt/clocking_ser/clk_in1' to pin 'pt/clocking_des/bbstub_clk_out1/O'
 INFO: [Synth 8-5578] Moved timing constraint from pin 'pt/clocking_ser/clk_out1' to pin 'pt/clocking_ser/bbstub_clk_out1/O'
 INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'pt/clocking_ser/clk_in1' to 'i_28/be2e/af/waddr_reg[0]/C'
 INFO: [Synth 8-5578] Moved timing constraint from pin 'pt/clocking_ser/clk_out2' to pin 'pt/clocking_ser/bbstub_clk_out2/O'
 INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'pt/clocking_ser/clk_in1' to 'i_28/be2e/af/waddr_reg[0]/C'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'pt/clocking/clk_in1' to pin 'bufg_des/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'pt/clocking/clk_out1' to pin 'pt/clocking/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'pt/clocking/clk_in1' to 'et/i_bufg/I'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'pt/clocking_des/clk_out1' to pin 'pt/clocking_des/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'pt/clocking_des/clk_out2' to pin 'pt/clocking_des/bbstub_clk_out2/O'
 INFO: [Synth 8-5819] Moved 7 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 897.949 ; gain = 591.668
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 895.703 ; gain = 589.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 924.082 ; gain = 617.801
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 923.016 ; gain = 617.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2636,7 +2607,7 @@ INFO: [Synth 8-6837] The timing for the instance me/cenc[0]/gen_dsp[3].sum_acc_r
 INFO: [Synth 8-6837] The timing for the instance me/cenc[0]/gen_dsp[4].sum_acc_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance me/cenc[0]/gen_dsp[5].sum_acc_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 977.168 ; gain = 670.887
+Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 976.445 ; gain = 670.484
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2665,7 +2636,7 @@ INFO: [Synth 8-6064] Net \me/yenc/gen_dsp[0].dsp/odelay_reg_rep_n_0  is driving 
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 977.168 ; gain = 670.887
+Finished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 976.445 ; gain = 670.484
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2678,7 +2649,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 977.168 ; gain = 670.887
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 976.445 ; gain = 670.484
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2690,25 +2661,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 977.168 ; gain = 670.887
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 976.445 ; gain = 670.484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 977.168 ; gain = 670.887
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 976.445 ; gain = 670.484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 977.168 ; gain = 670.887
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 976.445 ; gain = 670.484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 977.168 ; gain = 670.887
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 976.445 ; gain = 670.484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2909,17 +2880,17 @@ Report Instance Areas:
 |98    |  \val[2]                |VEC_3                                |    75|
 +------+-------------------------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 977.168 ; gain = 670.887
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 976.445 ; gain = 670.484
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 99 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:00:56 . Memory (MB): peak = 977.168 ; gain = 341.766
-Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 977.168 ; gain = 670.887
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:57 . Memory (MB): peak = 976.445 ; gain = 341.426
+Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 976.445 ; gain = 670.484
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 411 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 6 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 977.168 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 976.445 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 33 instances were transformed.
   PLLE2_BASE => PLLE2_ADV: 1 instances
@@ -2929,12 +2900,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32X1S => RAM32X1S (RAMS32): 8 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-594 Infos, 316 Warnings, 0 Critical Warnings and 0 Errors encountered.
+594 Infos, 277 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 977.168 ; gain = 682.359
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 977.168 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 976.445 ; gain = 681.953
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 976.445 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/CAPTURE.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file CAPTURE_utilization_synth.rpt -pb CAPTURE_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Feb 12 01:50:50 2019...
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 15 01:07:20 2019...

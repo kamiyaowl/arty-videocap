@@ -59,20 +59,20 @@ read_vhdl -library xil_defaultlib {
   C:/Users/user/repos/arty-videocap/hdl/ArtyEtherentTX/hdl/ethernet_test.vhd
   C:/Users/user/repos/arty-videocap/hdl/ArtyEtherentTX/hdl/nibble_data.vhd
 }
-read_ip -quiet c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+read_ip -quiet C:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_2/clk_wiz_2.xci
+set_property used_in_implementation false [get_files -all c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_2/clk_wiz_2_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_2/clk_wiz_2.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_2/clk_wiz_2_ooc.xdc]
+
+read_ip -quiet C:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
-read_ip -quiet c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci
+read_ip -quiet C:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci
 set_property used_in_implementation false [get_files -all c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_ooc.xdc]
-
-read_ip -quiet c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_2/clk_wiz_2.xci
-set_property used_in_implementation false [get_files -all c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_2/clk_wiz_2_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_2/clk_wiz_2.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/user/repos/arty-videocap/vivado/arty-videocap.srcs/sources_1/ip/clk_wiz_2/clk_wiz_2_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -106,6 +106,8 @@ set_property used_in_implementation false [get_files C:/Users/user/repos/arty-vi
 read_xdc C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/ila_timing_workaround.xdc
 set_property used_in_implementation false [get_files C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/ila_timing_workaround.xdc]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 

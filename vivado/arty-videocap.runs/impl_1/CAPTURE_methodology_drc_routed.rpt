@@ -1,0 +1,246 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Feb 15 01:23:16 2019
+| Host         : DESKTOP-AOQ4M3I running 64-bit major release  (build 9200)
+| Command      : report_methodology -file CAPTURE_methodology_drc_routed.rpt -pb CAPTURE_methodology_drc_routed.pb -rpx CAPTURE_methodology_drc_routed.rpx
+| Design       : CAPTURE
+| Device       : xc7a35ticsg324-1L
+| Speed File   : -1L
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_CAPTURE
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 40
++-----------+----------+----------------------------------------------------+------------+
+| Rule      | Severity | Description                                        | Violations |
++-----------+----------+----------------------------------------------------+------------+
+| TIMING-4  | Warning  | Invalid primary clock redefinition on a clock tree | 1          |
+| TIMING-6  | Warning  | No common primary clock between related clocks     | 3          |
+| TIMING-7  | Warning  | No common node between related clocks              | 3          |
+| TIMING-8  | Warning  | No common period between related clocks            | 1          |
+| TIMING-9  | Warning  | Unknown CDC Logic                                  | 1          |
+| TIMING-16 | Warning  | Large setup violation                              | 9          |
+| TIMING-18 | Warning  | Missing input or output delay                      | 13         |
+| TIMING-27 | Warning  | Invalid primary clock on hierarchical pin          | 1          |
+| XDCB-5    | Warning  | Runtime inefficient way to find pin objects        | 2          |
+| REQP-1959 | Advisory | connects_SERDES_RST_driver_not_FF                  | 6          |
++-----------+----------+----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-4#1 Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock pt/clocking_ser/inst/clk_in1 is defined downstream of clock clk_out1_clk_wiz_1 and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-6#1 Warning
+No common primary clock between related clocks  
+The clocks C and eth_tx_clk are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks C] -to [get_clocks eth_tx_clk]
+Related violations: <none>
+
+TIMING-6#2 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_clk_wiz_1 and clk1x_ser are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_clk_wiz_1] -to [get_clocks clk1x_ser]
+Related violations: <none>
+
+TIMING-6#3 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_clk_wiz_1 and eth_tx_clk are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_clk_wiz_1] -to [get_clocks eth_tx_clk]
+Related violations: <none>
+
+TIMING-7#1 Warning
+No common node between related clocks  
+The clocks C and eth_tx_clk are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks C] -to [get_clocks eth_tx_clk]
+Related violations: <none>
+
+TIMING-7#2 Warning
+No common node between related clocks  
+The clocks clk_out1_clk_wiz_1 and clk1x_ser are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_clk_wiz_1] -to [get_clocks clk1x_ser]
+Related violations: <none>
+
+TIMING-7#3 Warning
+No common node between related clocks  
+The clocks clk_out1_clk_wiz_1 and eth_tx_clk are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_clk_wiz_1] -to [get_clocks eth_tx_clk]
+Related violations: <none>
+
+TIMING-8#1 Warning
+No common period between related clocks  
+The clocks clk_out1_clk_wiz_1 and eth_tx_clk are found related (timed together) but have no common (expandable) period
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.596 ns between be2e/af/waddr_gray_reg[6]/C (clocked by clk_out1_clk_wiz_1) and be2e/af/waddr_gray_sync_reg[0][6]/D (clocked by eth_tx_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.738 ns between be2e/af/waddr_gray_reg[1]/C (clocked by clk_out1_clk_wiz_1) and be2e/af/waddr_gray_sync_reg[0][1]/D (clocked by eth_tx_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -1.944 ns between be2e/af/waddr_gray_reg[5]/C (clocked by clk_out1_clk_wiz_1) and be2e/af/waddr_gray_sync_reg[0][5]/D (clocked by eth_tx_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -2.060 ns between pt/sas_g/rst_reg/C (clocked by clk_out1_clk_wiz_1) and be2e/af/rrst_reg[0]/D (clocked by eth_tx_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -2.137 ns between be2e/af/waddr_gray_reg[2]/C (clocked by clk_out1_clk_wiz_1) and be2e/af/waddr_gray_sync_reg[0][2]/D (clocked by eth_tx_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -2.178 ns between be2e/af/waddr_gray_reg[12]/C (clocked by clk_out1_clk_wiz_1) and be2e/af/waddr_gray_sync_reg[0][12]/D (clocked by eth_tx_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -2.267 ns between be2e/af/waddr_gray_reg[0]/C (clocked by clk_out1_clk_wiz_1) and be2e/af/waddr_gray_sync_reg[0][0]/D (clocked by eth_tx_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -2.317 ns between be2e/af/waddr_gray_reg[4]/C (clocked by clk_out1_clk_wiz_1) and be2e/af/waddr_gray_sync_reg[0][4]/D (clocked by eth_tx_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -3.464 ns between be2e/af/waddr_gray_reg[11]/C (clocked by clk_out1_clk_wiz_1) and be2e/af/waddr_gray_sync_reg[0][11]/D (clocked by eth_tx_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on sw[0] relative to clock(s) tmds_rx_p[3]
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on sw[1] relative to clock(s) tmds_rx_p[3]
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on sw[2] relative to clock(s) tmds_rx_p[3]
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on sw[3] relative to clock(s) tmds_rx_p[3]
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on eth_tx_d[0] relative to clock(s) eth_tx_clk
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on eth_tx_d[1] relative to clock(s) eth_tx_clk
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on eth_tx_d[2] relative to clock(s) eth_tx_clk
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on eth_tx_d[3] relative to clock(s) eth_tx_clk
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on eth_tx_en relative to clock(s) eth_tx_clk
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on led[4] relative to clock(s) tmds_rx_p[3]
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on led[5] relative to clock(s) tmds_rx_p[3]
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on led[6] relative to clock(s) tmds_rx_p[3]
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on led[7] relative to clock(s) tmds_rx_p[3]
+Related violations: <none>
+
+TIMING-27#1 Warning
+Invalid primary clock on hierarchical pin  
+A primary clock pt/clocking_ser/inst/clk_in1 is created on an inappropriate internal pin pt/clocking_ser/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-through : [get_pins -filter {NAME =~ */*SyncAsync*/oSyncStages_reg[0]/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '9' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/user/repos/arty-videocap/hdl/vivado-library/ip/dvi2rgb/src/dvi2rgb.xdc (Line: 11)
+Related violations: <none>
+
+XDCB-5#2 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -filter {NAME =~ */*sas*/sync_rst_src_b*/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '7' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/user/repos/arty-videocap/hdl/constrs_prop.xdc (Line: 4)
+Related violations: <none>
+
+REQP-1959#1 Advisory
+connects_SERDES_RST_driver_not_FF  
+pt/genblk1[0].rx/InputSERDES_X/DeserializerMaster: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#2 Advisory
+connects_SERDES_RST_driver_not_FF  
+pt/genblk1[0].rx/InputSERDES_X/DeserializerSlave: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#3 Advisory
+connects_SERDES_RST_driver_not_FF  
+pt/genblk1[1].rx/InputSERDES_X/DeserializerMaster: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#4 Advisory
+connects_SERDES_RST_driver_not_FF  
+pt/genblk1[1].rx/InputSERDES_X/DeserializerSlave: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#5 Advisory
+connects_SERDES_RST_driver_not_FF  
+pt/genblk1[2].rx/InputSERDES_X/DeserializerMaster: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#6 Advisory
+connects_SERDES_RST_driver_not_FF  
+pt/genblk1[2].rx/InputSERDES_X/DeserializerSlave: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+
