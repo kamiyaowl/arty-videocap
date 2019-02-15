@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Fri Feb 15 01:07:20 2019
+| Date         : Fri Feb 15 14:15:29 2019
 | Host         : DESKTOP-AOQ4M3I running 64-bit major release  (build 9200)
 | Command      : report_utilization -file CAPTURE_utilization_synth.rpt -pb CAPTURE_utilization_synth.pb
 | Design       : CAPTURE
@@ -30,8 +30,8 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 2596 |     0 |     20800 | 12.48 |
-|   LUT as Logic             | 2485 |     0 |     20800 | 11.95 |
+| Slice LUTs*                | 2589 |     0 |     20800 | 12.45 |
+|   LUT as Logic             | 2478 |     0 |     20800 | 11.91 |
 |   LUT as Memory            |  111 |     0 |      9600 |  1.16 |
 |     LUT as Distributed RAM |   64 |     0 |           |       |
 |     LUT as Shift Register  |   47 |     0 |           |       |
@@ -157,11 +157,11 @@ Table of Contents
 |  Ref Name  | Used | Functional Category |
 +------------+------+---------------------+
 | FDRE       | 2917 |        Flop & Latch |
-| LUT6       |  905 |                 LUT |
-| LUT2       |  651 |                 LUT |
-| LUT4       |  482 |                 LUT |
-| LUT5       |  474 |                 LUT |
-| LUT3       |  433 |                 LUT |
+| LUT6       |  902 |                 LUT |
+| LUT2       |  650 |                 LUT |
+| LUT4       |  481 |                 LUT |
+| LUT5       |  471 |                 LUT |
+| LUT3       |  432 |                 LUT |
 | CARRY4     |  187 |          CarryLogic |
 | LUT1       |  139 |                 LUT |
 | MUXF7      |   64 |               MuxFx |

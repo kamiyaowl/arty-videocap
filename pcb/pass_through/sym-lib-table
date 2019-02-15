@@ -1,2 +1,3 @@
 (sym_lib_table
+  (lib (name pass_through-rescue)(type Legacy)(uri ${KIPRJMOD}/pass_through-rescue.lib)(options "")(descr ""))
 )
