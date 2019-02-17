@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Fri Feb 15 14:14:01 2019
-# Process ID: 16912
+# Start of session at: Sun Feb 17 16:11:52 2019
+# Process ID: 3752
 # Current directory: C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1
 # Command line: vivado.exe -log CAPTURE.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CAPTURE.tcl
 # Log file: C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/CAPTURE.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10928 
+INFO: Helper process launched with PID 2508 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 408.246 ; gain = 101.773
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 408.773 ; gain = 102.996
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'CAPTURE' [C:/Users/user/repos/arty-videocap/hdl/CAPTURE.v:4]
 	Parameter RX_INV bound to: 4'b0110 
@@ -151,18 +151,18 @@ WARNING: [Synth 8-350] instance 'rx' of module 'TMDS_Receiver' requires 12 conne
 WARNING: [Synth 8-350] instance 'rx' of module 'TMDS_Receiver' requires 12 connections, but only 10 given [C:/Users/user/repos/arty-videocap/hdl/PASS_THROUGH.v:95]
 WARNING: [Synth 8-350] instance 'rx' of module 'TMDS_Receiver' requires 12 connections, but only 10 given [C:/Users/user/repos/arty-videocap/hdl/PASS_THROUGH.v:95]
 INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/user/repos/arty-videocap/hdl/PASS_THROUGH.v:221]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/.Xil/Vivado-16912-DESKTOP-AOQ4M3I/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (7#1) [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/.Xil/Vivado-16912-DESKTOP-AOQ4M3I/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/.Xil/Vivado-16912-DESKTOP-AOQ4M3I/realtime/clk_wiz_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (8#1) [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/.Xil/Vivado-16912-DESKTOP-AOQ4M3I/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/.Xil/Vivado-3752-DESKTOP-AOQ4M3I/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (7#1) [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/.Xil/Vivado-3752-DESKTOP-AOQ4M3I/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/.Xil/Vivado-3752-DESKTOP-AOQ4M3I/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (8#1) [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/.Xil/Vivado-3752-DESKTOP-AOQ4M3I/realtime/clk_wiz_1_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'BUFIO' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:838]
 INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (9#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:838]
 INFO: [Synth 8-6157] synthesizing module 'BUFR' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:891]
 	Parameter BUFR_DIVIDE bound to: 5 - type: string 
 	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'BUFR' (10#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:891]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_2' [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/.Xil/Vivado-16912-DESKTOP-AOQ4M3I/realtime/clk_wiz_2_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_2' (11#1) [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/.Xil/Vivado-16912-DESKTOP-AOQ4M3I/realtime/clk_wiz_2_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_2' [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/.Xil/Vivado-3752-DESKTOP-AOQ4M3I/realtime/clk_wiz_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_2' (11#1) [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/.Xil/Vivado-3752-DESKTOP-AOQ4M3I/realtime/clk_wiz_2_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'SASRESET' [C:/Users/user/repos/arty-videocap/hdl/SASRESET.v:4]
 INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/user/repos/arty-videocap/hdl/SASRESET.v:9]
 INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/user/repos/arty-videocap/hdl/SASRESET.v:13]
@@ -668,14 +668,14 @@ INFO: [Synth 8-6155] done synthesizing module 'BRIDGE_ENC2ETH' (30#1) [C:/Users/
 INFO: [Synth 8-638] synthesizing module 'ethernet_test' [C:/Users/user/repos/arty-videocap/hdl/ArtyEtherentTX/hdl/ethernet_test.vhd:49]
 	Parameter eth_src_mac bound to: 48'b110111101010110110111110111011110000000100100011 
 	Parameter eth_dst_mac bound to: 48'b000110001100001010111111010101000100011011000000 
-	Parameter ip_src_addr bound to: 32'b00001010000010100000101000001010 
-	Parameter ip_dst_addr bound to: 32'b00001010000010100000101000000001 
+	Parameter ip_src_addr bound to: 32'b11000000101010000000000101101111 
+	Parameter ip_dst_addr bound to: 32'b11000000101010000000000100010100 
 INFO: [Synth 8-3491] module 'nibble_data' declared at 'C:/Users/user/repos/arty-videocap/hdl/ArtyEtherentTX/hdl/nibble_data.vhd:17' bound to instance 'data' of component 'nibble_data' [C:/Users/user/repos/arty-videocap/hdl/ArtyEtherentTX/hdl/ethernet_test.vhd:120]
 INFO: [Synth 8-638] synthesizing module 'nibble_data' [C:/Users/user/repos/arty-videocap/hdl/ArtyEtherentTX/hdl/nibble_data.vhd:31]
 	Parameter eth_src_mac bound to: 48'b110111101010110110111110111011110000000100100011 
 	Parameter eth_dst_mac bound to: 48'b000110001100001010111111010101000100011011000000 
-	Parameter ip_src_addr bound to: 168430090 - type: integer 
-	Parameter ip_dst_addr bound to: 168430081 - type: integer 
+	Parameter ip_src_addr bound to: -1062731409 - type: integer 
+	Parameter ip_dst_addr bound to: -1062731500 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'nibble_data' (31#1) [C:/Users/user/repos/arty-videocap/hdl/ArtyEtherentTX/hdl/nibble_data.vhd:31]
 INFO: [Synth 8-3491] module 'add_crc32' declared at 'C:/Users/user/repos/arty-videocap/hdl/ArtyEtherentTX/hdl/add_crc32.vhd:14' bound to instance 'i_add_crc32' of component 'add_crc32' [C:/Users/user/repos/arty-videocap/hdl/ArtyEtherentTX/hdl/ethernet_test.vhd:137]
 INFO: [Synth 8-638] synthesizing module 'add_crc32' [C:/Users/user/repos/arty-videocap/hdl/ArtyEtherentTX/hdl/add_crc32.vhd:22]
@@ -776,7 +776,7 @@ WARNING: [Synth 8-3331] design PASS_THROUGH has unconnected port sw[2]
 WARNING: [Synth 8-3331] design PASS_THROUGH has unconnected port sw[1]
 WARNING: [Synth 8-3331] design PASS_THROUGH has unconnected port sw[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 524.988 ; gain = 218.516
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 525.219 ; gain = 219.441
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -789,13 +789,13 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 524.988 ; gain = 218.516
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 525.219 ; gain = 219.441
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 524.988 ; gain = 218.516
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 525.219 ; gain = 219.441
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -835,25 +835,25 @@ Finished Parsing XDC File [C:/Users/user/repos/arty-videocap/hdl/vivado-library/
 Parsing XDC File [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/dont_touch.xdc]
 INFO: [Timing 38-2] Deriving generated clocks
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 855.559 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 854.473 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 855.566 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 854.473 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   PLLE2_BASE => PLLE2_ADV: 1 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 855.566 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 855.566 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 854.473 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 854.473 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 855.566 ; gain = 549.094
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 854.473 ; gain = 548.695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35ticsg324-1L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 855.566 ; gain = 549.094
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 854.473 ; gain = 548.695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -866,7 +866,7 @@ Applied set_property DONT_TOUCH = true for pt/clocking_ser. (constraint file  au
 Applied set_property DONT_TOUCH = true for pt/clocking. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for pt/clocking_des. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 855.566 ; gain = 549.094
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 854.473 ; gain = 548.695
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'pState_reg' in module 'PhaseAlign'
 INFO: [Synth 8-5546] ROM "pCtlTknOvf" won't be mapped to RAM because it is too sparse
@@ -962,7 +962,7 @@ INFO: [Synth 8-5546] ROM "busy0" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'pState_reg' in module 'PhaseAlign'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 855.566 ; gain = 549.094
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 854.473 ; gain = 548.695
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2151,7 +2151,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (me/\pre_e
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (me/bs/\shiftdata_reg[1][27] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (me/bs/\shiftdata_reg[2][30] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 855.566 ; gain = 549.094
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 854.473 ; gain = 548.695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2215,6 +2215,10 @@ ROM:
 |COMPONENT_ENCODER | gen_dsp[26].cost/tbl | 64x8          | LUT            | 
 |COMPONENT_ENCODER | gen_dsp[27].cost/tbl | 64x8          | LUT            | 
 |COMPONENT_ENCODER | gen_dsp[1].cost/tbl  | 64x8          | LUT            | 
+|COMPONENT_ENCODER | gen_dsp[2].cost/tbl  | 64x8          | LUT            | 
+|COMPONENT_ENCODER | gen_dsp[3].cost/tbl  | 64x8          | LUT            | 
+|COMPONENT_ENCODER | gen_dsp[4].cost/tbl  | 64x8          | LUT            | 
+|COMPONENT_ENCODER | gen_dsp[5].cost/tbl  | 64x8          | LUT            | 
 |COMPONENT_ENCODER | gen_dsp[1].cost/tbl  | 64x8          | LUT            | 
 |COMPONENT_ENCODER | gen_dsp[2].cost/tbl  | 64x8          | LUT            | 
 |COMPONENT_ENCODER | gen_dsp[3].cost/tbl  | 64x8          | LUT            | 
@@ -2442,13 +2446,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'pt/clocking_des/clk_out1'
 INFO: [Synth 8-5578] Moved timing constraint from pin 'pt/clocking_des/clk_out2' to pin 'pt/clocking_des/bbstub_clk_out2/O'
 INFO: [Synth 8-5819] Moved 7 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 901.152 ; gain = 594.680
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 894.328 ; gain = 588.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 927.621 ; gain = 621.148
+Finished Timing Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:20 . Memory (MB): peak = 921.020 ; gain = 615.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2608,7 +2612,7 @@ INFO: [Synth 8-6837] The timing for the instance me/cenc[0]/gen_dsp[3].sum_acc_r
 INFO: [Synth 8-6837] The timing for the instance me/cenc[0]/gen_dsp[4].sum_acc_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance me/cenc[0]/gen_dsp[5].sum_acc_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 980.191 ; gain = 673.719
+Finished Technology Mapping : Time (s): cpu = 00:01:20 ; elapsed = 00:01:25 . Memory (MB): peak = 974.563 ; gain = 668.785
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2637,7 +2641,7 @@ INFO: [Synth 8-6064] Net \me/yenc/gen_dsp[0].dsp/odelay_reg_rep_n_0  is driving 
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:12 ; elapsed = 00:01:16 . Memory (MB): peak = 980.191 ; gain = 673.719
+Finished IO Insertion : Time (s): cpu = 00:01:22 ; elapsed = 00:01:27 . Memory (MB): peak = 974.563 ; gain = 668.785
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2650,7 +2654,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:12 ; elapsed = 00:01:16 . Memory (MB): peak = 980.191 ; gain = 673.719
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:22 ; elapsed = 00:01:27 . Memory (MB): peak = 974.563 ; gain = 668.785
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2662,25 +2666,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 980.191 ; gain = 673.719
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:24 ; elapsed = 00:01:28 . Memory (MB): peak = 974.563 ; gain = 668.785
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 980.191 ; gain = 673.719
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:24 ; elapsed = 00:01:28 . Memory (MB): peak = 974.563 ; gain = 668.785
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 980.191 ; gain = 673.719
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:24 ; elapsed = 00:01:29 . Memory (MB): peak = 974.563 ; gain = 668.785
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 980.191 ; gain = 673.719
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:24 ; elapsed = 00:01:29 . Memory (MB): peak = 974.563 ; gain = 668.785
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2747,11 +2751,11 @@ Report Cell Usage:
 |16    |ISERDESE2   |     3|
 |17    |ISERDESE2_1 |     3|
 |18    |LUT1        |   140|
-|19    |LUT2        |   650|
-|20    |LUT3        |   432|
-|21    |LUT4        |   481|
-|22    |LUT5        |   471|
-|23    |LUT6        |   902|
+|19    |LUT2        |   654|
+|20    |LUT3        |   433|
+|21    |LUT4        |   483|
+|22    |LUT5        |   472|
+|23    |LUT6        |   909|
 |24    |MUXF7       |    56|
 |25    |MUXF8       |    21|
 |26    |ODDR        |     1|
@@ -2781,7 +2785,7 @@ Report Instance Areas:
 +------+-------------------------+-------------------------------------+------+
 |      |Instance                 |Module                               |Cells |
 +------+-------------------------+-------------------------------------+------+
-|1     |top                      |                                     |  6624|
+|1     |top                      |                                     |  6639|
 |2     |  be2e                   |BRIDGE_ENC2ETH                       |   294|
 |3     |    af                   |ASYNC_FIFO__parameterized0           |   251|
 |4     |      rwram              |RAM__parameterized0                  |    12|
@@ -2789,8 +2793,8 @@ Report Instance Areas:
 |6     |  \dec[0]                |DECODER                              |    41|
 |7     |  \dec[1]                |DECODER_0                            |    49|
 |8     |  \dec[2]                |DECODER_1                            |    49|
-|9     |  et                     |ethernet_test                        |   179|
-|10    |    data                 |nibble_data                          |    49|
+|9     |  et                     |ethernet_test                        |   194|
+|10    |    data                 |nibble_data                          |    64|
 |11    |    i_add_crc32          |add_crc32                            |    59|
 |12    |    i_add_preamble       |add_preamble                         |    23|
 |13    |  me                     |MJPG_ENCODER                         |  4268|
@@ -2881,17 +2885,17 @@ Report Instance Areas:
 |98    |  \val[2]                |VEC_3                                |    75|
 +------+-------------------------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 980.191 ; gain = 673.719
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:24 ; elapsed = 00:01:29 . Memory (MB): peak = 974.563 ; gain = 668.785
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 99 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:01:09 . Memory (MB): peak = 980.191 ; gain = 343.141
-Synthesis Optimization Complete : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 980.191 ; gain = 673.719
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:59 ; elapsed = 00:01:19 . Memory (MB): peak = 974.563 ; gain = 339.531
+Synthesis Optimization Complete : Time (s): cpu = 00:01:24 ; elapsed = 00:01:29 . Memory (MB): peak = 974.563 ; gain = 668.785
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 411 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 6 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 980.191 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 974.563 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 33 instances were transformed.
   PLLE2_BASE => PLLE2_ADV: 1 instances
@@ -2903,10 +2907,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 594 Infos, 281 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:21 . Memory (MB): peak = 980.191 ; gain = 685.188
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 980.191 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:28 ; elapsed = 00:01:33 . Memory (MB): peak = 974.563 ; gain = 680.254
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 974.563 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/user/repos/arty-videocap/vivado/arty-videocap.runs/synth_1/CAPTURE.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file CAPTURE_utilization_synth.rpt -pb CAPTURE_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Feb 15 14:15:29 2019...
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 17 16:13:33 2019...
